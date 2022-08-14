@@ -16,12 +16,13 @@ body{
 
 }
 .nav-lists{
-    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 39%;
-    margin-left: 29rem;
+    min-width: 39%;
+    margin-left: 7rem;
+    margin-right: -15rem;
+    cursor: pointer;
 }
 
 .nav-list{
@@ -49,6 +50,7 @@ body > header > nav > div > svg{
     color: white;
     margin-right: -1rem;
     font-size: 20px;
+    
 }
 .nav-num{
     margin-top: -1rem;
@@ -106,10 +108,12 @@ body > header > nav > div > svg{
     margin-top: 20rem;
 }
 img[alt=bulb]{
+    pointer-events: none;
     margin-top: -3rem;
     margin-left: -9rem;
 }img[alt=puzzle]{
     margin-top: -2.7rem;
+    pointer-events: none
 }
 .bulbline{
     position: absolute;
@@ -156,4 +160,210 @@ img[alt=bulb]{
     font-family: 'Roboto';
     font-weight: 900;
     width: 14rem;
+}
+@media (max-width:480px){
+    body{
+        height: 120vh;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0rem;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    .nav-right{
+        margin-left: -10rem;
+    }
+    .nav-lists{
+        margin-left: -15rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-list{
+        font-size: 2rem;
+    }
+    .main{
+        margin-top: -5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .onlytext{
+        font-size: 3rem;
+        width: 20rem;
+    }
+    .card1{
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+    .card2{
+        margin-left: -19rem;
+        margin-top: 16rem;
+    }
+    .bulbcircle{
+        display: none;
+
+    }
+    .bulbline{
+        display: none;
+    }
+    .puzzlecircle{
+        display: none;
+    }
+    .puzzleline{
+        display: none;
+    }
+}
+@media (min-width: 481px) and (max-width:929px){
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-logo-img{
+        width: 7rem;
+        height: 3rem;
+    }
+    .nav-lists{
+        min-width: 90%;
+        margin-left: -7rem;
+        margin-right: 0;
+    }
+    
+    .nav-right{
+        display: flex;
+        margin-top: -2rem;
+        margin-left: -17rem;
+    }
+    
+    .hrline{
+        width: 75%;
+        margin-left: 5%;
+    }
+    
+    /* <--- Main ---> */
+    .onlytext{
+        font-size: 4rem;
+        width: 30rem;
+        padding-top: 0rem;
+        padding-left: 0rem;
+        color: white;
+    }
+    .cards{
+        display: flex;
+    }
+    .card1{
+        margin-left: -28rem;
+        margin-top: 22rem;
+    }
+    .bulbline{
+        display: none;
+    }
+    .bulbcircle{
+       display: none;
+    }
+    .puzzleline{
+        display: none;
+    }
+    .puzzlecircle{
+       display: none;
+    }
+    .card2{
+        margin-top: 36rem;
+        margin-left: -19rem;
+    }
+}
+@media (min-width: 930px) and (max-width: 1350px){
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .nav-logo-img{
+        width: 7rem;
+        height: 3rem;
+    }
+    .nav-lists{
+        min-width: 90%;
+        margin-left: -7rem;
+        margin-right: 0;
+    }
+    
+    .nav-right{
+        display: flex;
+        margin-top: -2rem;
+        margin-left: -17rem;
+    }
+    
+    .hrline{
+        width: 75%;
+        margin-left: 5%;
+    }
+    
+    /* <--- Main ---> */
+    .onlytext{
+        font-size: 4rem;
+        width: 30rem;
+        padding-top: 0rem;
+        padding-left: 0rem;
+        color: white;
+    }
+    .cards{
+        display: flex;
+    }
+    .card1{
+        margin-top: 25rem;
+        margin-left: -15rem;
+    }
+    .bulbline{
+        width: 7.2rem;
+    }
+    .puzzleline{
+        margin-left: 6.8rem;
+        width: 7rem;
+    }
+    .puzzlecircle{
+    }
+    .card2{
+        margin-left: 0rem;
+    }
+}
+@media (min-width: 1920px){
+    body{
+        width: 100vw;
+        height: 100vh;
+    }
+    .card1{
+        transform: scale(2);
+        margin-left: 20rem;
+        margin-top: 35rem;
+    }
+    .bulbline{
+        width: 7rem;
+    }
+    .card2{
+        transform: scale(2);
+        margin-top: 10rem;
+        margin-left: 18rem;
+    }
+    .puzzleline{
+        width: 7rem;
+    }
+    .puzzlecircle{
+        margin-left: 10rem;
+    }
 }

@@ -3,7 +3,7 @@ This is a sample page. The website focuses on implementing the basics of HTML an
 
 ## Time taken
 
-2 hours and 35 mins
+3 hours and 30mins approx(including responsiveness)
 
 ## Learned 
 - More on creating shapes
